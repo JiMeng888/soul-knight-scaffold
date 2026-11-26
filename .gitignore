@@ -1,0 +1,45 @@
+# ---- 依赖与构建产物（可由 package-lock.json / npm run build 复现）----
+node_modules/
+dist/
+.vite/
+
+# ---- 本机调试 / 自动试玩 / 日志残留（不入库）----
+# 试玩脚本 Verbose 输出、诊断脚本、构建日志都只在本机用
+*.log
+.pt*.log
+.pt*.json
+.ux-*.log
+.diag*
+.tc*.log
+.final-*.log
+.balance-probe.mjs
+.dbg.mjs
+.roomcheck.mjs
+.wstats.mjs
+.probe-spawn.mjs
+.tmp-*/
+.tmp*
+.chrome-prof*/
+.prof-*
+
+# ---- 密钥与凭据（推送前已扫描确认无命中，这里做防御性兜底）----
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*secret*
+*credential*
+*password*
+*token*
+
+# ---- 本地 AI 工作区 / 系统文件 ----
+.workbuddy/
+.claude/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rogue Knight Scaffold · 元气骑士式架构脚手架</title>
+    <style>
+      :root { color-scheme: light; }
+      * { box-sizing: border-box; }
+      html, body { height: 100%; margin: 0; }
+      body {
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        gap: 14px; background: #eef0f5; color: #232733;
+        font-family: "LXGW WenKai", "Microsoft YaHei", system-ui, sans-serif;
+      }
+      #game {
+        display: block; image-rendering: pixelated; image-rendering: crisp-edges;
+        background: #14161f; border: 2px solid #232733; border-radius: 4px;
+        box-shadow: 0 10px 30px rgba(20, 22, 31, 0.18);
+        cursor: crosshair;
+      }
+      .hint { margin: 0; font-size: 13px; color: #5a6070; letter-spacing: 0.02em; }
+      .hint b { color: #232733; font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <canvas id="game" width="960" height="540"></canvas>
+    <p class="hint">
+      <b>WASD</b> 移动 · <b>鼠标</b> 瞄准 · <b>左键</b> 射击 · <b>Space</b> 翻滚 ·
+      <b>Q</b> 切枪 · <b>E</b> 拾取 · <b>R</b> 重开 · <b>F3</b> 调试 · <b>F9</b> 重建本层
+    </p>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

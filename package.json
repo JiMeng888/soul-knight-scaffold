@@ -1,0 +1,18 @@
+{
+  "name": "soul-knight-scaffold",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "元气骑士式俯视角 Roguelike 架构脚手架（TypeScript + Canvas，无运行时依赖）",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "verify": "node scripts/verify-generator.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 4173"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7"
+  }
+}
